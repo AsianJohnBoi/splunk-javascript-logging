@@ -43,7 +43,7 @@ function _err(err, context) {
  */
 function _defaultEventFormatter(message, severity) {
     var event = {
-        message: message,
+        ...message,
         severity: severity
     };
     return event;
